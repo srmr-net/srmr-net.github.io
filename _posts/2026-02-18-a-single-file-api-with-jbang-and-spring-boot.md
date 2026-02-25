@@ -63,4 +63,4 @@ You'll notice it's not a traditional Controller class. Instead we define our end
         }
 {% endhighlight %}
 
-A RouterFunction is Function that routes a request to HandlerFunction, which is a Function that takes a request and returns a response. So in the above `(req) -> ok().body("Hello, World") is our HandlerFunction. `GET("/")` is a call to a utility function that creates a RouterPredicate. Here, it's returning a predicate that will return true if the request is a HTTP GET request for the root page. Another uility function, `route`, is what builds the actual RouterFunction, from the RequestPredicate and the RequestHandler.
+A RouterFunction is Function that routes a request to HandlerFunction, which is a Function that takes a request and returns a response. So in the above `(req) -> ok().body("Hello, World")` is our HandlerFunction. `GET("/")` is a call to a utility function that creates a RouterPredicate. Here, it's returning a predicate that will return true if the request is a HTTP GET request for the root page. Another uility function, `route`, is what builds the actual RouterFunction, from the RequestPredicate and the RequestHandler.
