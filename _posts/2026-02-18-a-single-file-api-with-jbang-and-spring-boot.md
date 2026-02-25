@@ -48,7 +48,7 @@ That's it. Just `chmod +x App.java` and then `./App.java` and you have a working
 
 You'll notice `@ComponentScan("disable")` annotation on the class. This doesn't actually disable component scanning. What it actually does is cause Spring to try and scan a package called `disable`. As there aren't any classes in that package Spring carries on its normal startup.
 
-Why do we have to do this? You'll notice that we don't declare what package the class belongs to. Which means the class is in the "unnamed package". By default Spring Boot will try and component scan the package the application class is in. But Spring goes nuts when that happens - it tries to scan the entire world and will run into missing dependencies. 
+Why do we have to do this? Because we don't declare what package the class belongs to which means the App class is in the "unnamed package". By default Spring Boot will try and component scan the package the application class is in, but when it's the unnamed package Spring goes nuts and it tries to component scan everything it sees. But as everything it sees will have references to packages that are missing, startup fails. Having it scan a dummy package stops this.
 
 (It's not surprising that Spring doesn't handle the unnamed package very well. Until recently with the work on making Java friendlier for beginners, placing a class in the unnamed package was generally considered to be very poor form in almost all circumstances)
 
