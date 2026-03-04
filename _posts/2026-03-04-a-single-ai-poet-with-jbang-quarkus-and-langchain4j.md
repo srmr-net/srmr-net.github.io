@@ -105,7 +105,7 @@ Skipping over the dependencies and their imports, we come to our application's c
 class Poem implements Runnable {
 {% endhighlight %}
 
-The @Command annotation is because we're using Picoli to handle parsing the command line and implementing Runnable so that Quarkus runs our app. 
+The @Command annotation is because we're using Picocli to handle parsing the command line and implementing Runnable so that Quarkus runs our app. 
 Normally the command class would be it's own thing but here we're reusing the main application class to simplify things a bit.
 
 Next up, create an interface that will be used by Quarkus to generate an "AI Service"
