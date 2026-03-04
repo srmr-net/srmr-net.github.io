@@ -93,7 +93,7 @@ options instead of in an application.properties file.
 I'm using OpenRouter to access the LLM model and with LangChain4J that means using the OpenAI integration but changing the base url 
 (I am wondering how this is supposed to work if I want to have both OpenRouter on OpenAI configured in the same app and swap between them - a challenge for another day).
 
-I'm using [arcee-ai/trinity-large-preview:free](https://openrouter.ai/arcee-ai/trinity-large-preview:free), partly because "It excels in creative writing, storytelling, role-play, chat scenarios...", but 
+I'm using [arcee-ai/trinity-large-preview:free](https://openrouter.ai/arcee-ai/trinity-large-preview:free) as the model, partly because "It excels in creative writing, storytelling, role-play, chat scenarios...", but 
 mostly because it's free to use. (I am wondering what happens if I want to swap models on the fly - again, a challenge for another day)
 
 Finally, it's time to set the API key. You'll need your own. Please note, "Key Management Best Practices" is something beyond the scope of this post (though think before you commit to git).
