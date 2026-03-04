@@ -177,8 +177,8 @@ run by itself.
 It turns out JBang has helped us out here. JBang has an experimental feature called ["Build Integration"](https://www.jbang.dev/documentation/jbang/latest/integration.html#build-integration-experimental) which
 is aware of Quarkus and is able get our app running without us having to define an explicit main method.
 
-[fn1]: AI has long been a hobby of mine. I used to spend time playing with older AI tech like Eliza/Alice Bots, Semantic Web/Knowledge Graphs, rules engines/expert systems and even genetic algorithms. 
+[^fn1]: AI has long been a hobby of mine. I used to spend time playing with older AI tech like Eliza/Alice Bots, Semantic Web/Knowledge Graphs, rules engines/expert systems and even genetic algorithms. 
 Oddly, I've got a sneaking suspicion that at least some of the old tech is going to make a quiet comeback at some point, partly because people like determinism in their software and partly because
 LLMs should make building with that tech a whole lot easier.
 
-[fn2]: I could say that about a lot of things when it comes to almost anything related to JPMS or the clamping down in the name of security that has been taking place since 11. 
+[^fn2]: I could say that about a lot of things when it comes to almost anything related to JPMS or the clamping down in the name of security that has been taking place since 11. 
