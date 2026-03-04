@@ -9,10 +9,10 @@ I dusted off my 25-ish year old copy of "Constructing Intelligent Agents Using J
 think and is probably worth a blog post on its own at some point) and from that I decided to look into how to construct an intelligent agent using Java in 2026. I also wanted to see how
 lightweight I could make in the second of what will probably be several "what can you do in a single file with JBang" posts.
 
-### A breif glance at the Java AI landscape
+### A brief glance at the Java AI landscape
 
-The first thing I needed to do waslook at what platforms I could leverage. It turns out that there are two, very familar, standouts - Spring AI and Quarkus with LangChain4J (in what feels like
-a dynastic sports rivalry that crosses generations). As someone who went over to the Spring side back in the version 1.2 timeframe, you'd think I'd be kicking Spring AI's tires 
+The first thing I needed to do waslook at what platforms I could leverage. It turns out that there are two, very familiar, standouts - Spring AI and Quarkus with LangChain4J (in what feels like
+a dynastic sports rivalry that crosses generations). As someone who went over to the Spring side back in the version 1.2 time frame, you'd think I'd be kicking Spring AI's tires 
 (and one day I probably will), but this time I thought I'd give Quarkus a try (mostly because the [A2A Protocol SDK](https://github.com/a2aproject/a2a-java) is tilted towards Quarkus 
 and I plan on looking into that later, but also because no-one is paying me to do this so I might as well learn something extra while I'm at it). 
 
@@ -88,10 +88,10 @@ Exception in thread "vert.x-internal-blocking-1" java.lang.IllegalAccessError: m
 when the app terminates. Not sure why. Don't really care. I just want it to work.[^fn2] That runtime option makes it work.
 
 Following that, we set up some options for LangChain4J. As I wanted this keep this self contained in a single file, I needed to set those options as runtime
-options instead of in an application.proprties file.
+options instead of in an application.properties file.
 
 I'm using OpenRouter to access the LLM model and with LangChain4J that means using the OpenAI integration but changing the base url 
-(I am wondering how this is suppossed to work if I want to have both OpenRouter on OpenAI configured in the same app and swap between them - a challenge for another day).
+(I am wondering how this is supposed to work if I want to have both OpenRouter on OpenAI configured in the same app and swap between them - a challenge for another day).
 
 I'm using [arcee-ai/trinity-large-preview:free](https://openrouter.ai/arcee-ai/trinity-large-preview:free), partly because "It excels in creative writing, storytelling, role-play, chat scenarios...", but 
 mostly because it's free to use. (I am wondering what happens if I want to swap models on the fly - again, a challenge for another day)
@@ -174,11 +174,11 @@ The fuel of dreams, a boundless light
 You might have noticed something. We don't have a main method (in any of the now accepted styles). We only have a `Runnable::run`, so there is the question of how exactly does the above code 
 run by itself.
 
-It turns out JBang has heled us out here. JBang has an experimental feature called ["Build Integration"](https://www.jbang.dev/documentation/jbang/latest/integration.html#build-integration-experimental) which
+It turns out JBang has helped us out here. JBang has an experimental feature called ["Build Integration"](https://www.jbang.dev/documentation/jbang/latest/integration.html#build-integration-experimental) which
 is aware of Quarkus and is able get our app running without us having to define an explicit main method.
 
 [fn1]: AI has long been a hobby of mine. I used to spend time playing with older AI tech like Eliza/Alice Bots, Semantic Web/Knowledge Graphs, rules engines/expert systems and even genetic algorithms. 
-Oddly, I've got a sneaking suspicion that at least some of thre old tech is going to make a quiet comeback at some point, partly because people like determinism in thier software and partly because
+Oddly, I've got a sneaking suspicion that at least some of the old tech is going to make a quiet comeback at some point, partly because people like determinism in their software and partly because
 LLMs should make building with that tech a whole lot easier.
 
 [fn2]: I could say that about a lot of things when it comes to almost anything related to JPMS or the clamping down in the name of security that has been taking place since 11. 
