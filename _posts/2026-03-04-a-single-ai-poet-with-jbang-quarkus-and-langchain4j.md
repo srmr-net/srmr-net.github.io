@@ -11,7 +11,7 @@ lightweight I could make in the second of what will probably be several "what ca
 
 ### A brief glance at the Java AI landscape
 
-The first thing I needed to do waslook at what platforms I could leverage. It turns out that there are two, very familiar, standouts - Spring AI and Quarkus with LangChain4J (in what feels like
+The first thing I needed to do was look at what platforms I could leverage. It turns out that there are two, very familiar, standouts - Spring AI and Quarkus with LangChain4J (in what feels like
 a dynastic sports rivalry that crosses generations). As someone who went over to the Spring side back in the version 1.2 time frame, you'd think I'd be kicking Spring AI's tires 
 (and one day I probably will), but this time I thought I'd give Quarkus a try (mostly because the [A2A Protocol SDK](https://github.com/a2aproject/a2a-java) is tilted towards Quarkus 
 and I plan on looking into that later, but also because no-one is paying me to do this so I might as well learn something extra while I'm at it). 
