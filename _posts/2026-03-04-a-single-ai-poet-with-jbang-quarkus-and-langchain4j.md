@@ -5,7 +5,7 @@ tags: jbang quarkus langchain4j ai
 ---
 
 I've been spending time playing about with LLM based AI[^fn1] lately (who hasn't?) and I've been wanting to get under the hood of how exactly things like agents work. As part of this, 
-I dusted off my 25-ish year old copy of "Constructing Intelligent Agents Using Java" to remind myself how Agents used to be built (It's more similar than you might
+I dusted off my 25-ish year old copy of "[Constructing Intelligent Agents Using Java](https://www.amazon.co.uk/Constructing-Intelligent-Agents-Using-Java)" to remind myself how Agents used to be built (It's more similar than you might
 think and is probably worth a blog post on its own at some point) and from that I decided to look into how to construct an intelligent agent using Java in 2026. I also wanted to see how
 lightweight I could make in the second of what will probably be several "what can you do in a single file with JBang" posts.
 
